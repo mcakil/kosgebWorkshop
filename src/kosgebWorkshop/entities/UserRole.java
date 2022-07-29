@@ -1,39 +1,40 @@
 package kosgebWorkshop.entities;
 
 public class UserRole {
-	private int id;
-	private Role role;
-	private User user;
-	
-	public UserRole(int id, Role role, User user) {
-		super();
-		this.id = id;
-		this.role = role;
-		this.user = user;
-	}
+   private int id;
+   private User user;
+   private Role role;
 
-	public int getId() {
-		return id;
-	}
+    public UserRole() {
+    }
 
-	public void setId(int id) {
-		this.id = id;
-	}
+    public UserRole(int id, User user, Role role) {
+        this.id = id;
+        this.user = user;
+        this.role = role;
+    }
 
-	public Role getRole() {
-		return role;
-	}
+    public int getId() {
+        return id;
+    }
 
-	public void setRole(Role role) {
-		this.role = role;
-	}
+    public void setId(int id) {
+        this.id = id;
+    }
 
-	public User getUser() {
-		return user;
-	}
+    public User getUser() {
+        return user;
+    }
 
-	public void setUser(User user) {
-		this.user = user;
-	}
+    public void setUser(User user) {
+        this.user = user;
+    }
 
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
 }

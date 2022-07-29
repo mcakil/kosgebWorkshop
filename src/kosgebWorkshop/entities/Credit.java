@@ -5,49 +5,50 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Credit {
-	private int id;
-	private String name;
-	private LocalDate startDate;
-	private final List<CreditProperty> creditProperties = new ArrayList<>();
-	private final List<Application> applications = new ArrayList<>();
-	
-	public Credit(int id, String name, LocalDate startDate) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.startDate = startDate;
-	}
+    private int id;
+    private String name;
+    private LocalDate dateStarted;
+    private final List<Application> applications = new ArrayList<>();
+    private final List<CreditFeatures> creditFeatures = new ArrayList<>();
 
-	public int getId() {
-		return id;
-	}
+    public Credit() {
+    }
 
-	public void setId(int id) {
-		this.id = id;
-	}
+    public Credit(int id, String name, LocalDate dateStarted) {
+        this.id = id;
+        this.name = name;
+        this.dateStarted = dateStarted;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public int getId() {
+        return id;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public void setId(int id) {
+        this.id = id;
+    }
 
-	public LocalDate getStartDate() {
-		return startDate;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public void setStartDate(LocalDate startDate) {
-		this.startDate = startDate;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public List<CreditProperty> getCreditProperties() {
-		return creditProperties;
-	}
+    public LocalDate getDateStarted() {
+        return dateStarted;
+    }
 
-	public List<Application> getApplications() {
-		return applications;
-	}
-	
+    public void setDateStarted(LocalDate dateStarted) {
+        this.dateStarted = dateStarted;
+    }
+
+    public List<Application> getApplications() {
+        return applications;
+    }
+
+    public List<CreditFeatures> getCreditFeatures() {
+        return creditFeatures;
+    }
 }

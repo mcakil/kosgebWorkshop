@@ -1,29 +1,44 @@
 package kosgebWorkshop.entities;
 
-public class Entrepreneur extends Applicant {
-	private String firstName, lastName;
+public class Entrepreneur extends Applicant{
+    private String firstName;
+    private String lastName;
+    private String nationalIdentity;
 
-	public Entrepreneur(int id,  String username, String password, String firstName, String lastName) {
-		super(id,username,password);
-		this.firstName = firstName;
-		this.lastName = lastName;
-	}
-	
-	public String getFirstName() {
-		return firstName;
-	}
+    public Entrepreneur(String firstName, String lastName, String nationalIdentity) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.nationalIdentity = nationalIdentity;
+    }
 
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
+    public Entrepreneur(int id, String userName, String password, String firstName, String lastName, String nationalIdentity) {
+        super(id, userName, password);
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.nationalIdentity = nationalIdentity;
+    }
 
-	public String getLastName() {
-		return lastName;
-	}
+    public String getFirstName() {
+        return firstName;
+    }
 
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
-	
-	
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getNationalIdentity() {
+        return nationalIdentity;
+    }
+
+    public void setNationalIdentity(String nationalIdentity) {
+        this.nationalIdentity = nationalIdentity;
+    }
 }

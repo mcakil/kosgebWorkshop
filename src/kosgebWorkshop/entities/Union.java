@@ -1,20 +1,22 @@
 package kosgebWorkshop.entities;
 
-public class Union extends Applicant {
+public class Union extends Applicant{
+    private String name;
 
-	private String name;
-	
-	public Union(int id, String username, String password, String name) {
-		super(id, username, password);
-		this.setName(name);
-	}
+    public Union(String name) {
+        this.name = name;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public Union(int id, String userName, String password, String name) {
+        super(id, userName, password);
+        this.name = name;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
-	
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }

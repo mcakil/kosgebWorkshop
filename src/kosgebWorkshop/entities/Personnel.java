@@ -1,41 +1,58 @@
 package kosgebWorkshop.entities;
 
 public class Personnel extends User{
+    private String firstName;
+    private String lastName;
+    private String officeId;
+    private String registrationNumber;
 
-	private String name, personnelId;
-	private int officeId;
-	
-	public Personnel(int id, String username, String password, String name, int officeId, String personnelId) {
-		super(id, username, password);
-		this.name = name;
-		this.officeId = officeId;
-		this.personnelId = personnelId;
-	}
+    public Personnel() {
+    }
 
-	public String getName() {
-		return name;
-	}
+    public Personnel(String firstName, String lastName, String officeId, String registrationNumber) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.officeId = officeId;
+        this.registrationNumber = registrationNumber;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public Personnel(int id, String userName, String password, String firstName, String lastName, String officeId, String registrationNumber) {
+        super(id, userName, password);
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.officeId = officeId;
+        this.registrationNumber = registrationNumber;
+    }
 
-	public int getOfficeId() {
-		return officeId;
-	}
+    public String getFirstName() {
+        return firstName;
+    }
 
-	public void setOfficeId(int officeId) {
-		this.officeId = officeId;
-	}
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
 
-	public String getPersonnelId() {
-		return personnelId;
-	}
+    public String getLastName() {
+        return lastName;
+    }
 
-	public void setPersonnelId(String personnelId) {
-		this.personnelId = personnelId;
-	}
-	
-	
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
 
+    public String getOfficeId() {
+        return officeId;
+    }
+
+    public void setOfficeId(String officeId) {
+        this.officeId = officeId;
+    }
+
+    public String getRegistrationNumber() {
+        return registrationNumber;
+    }
+
+    public void setRegistrationNumber(String registrationNumber) {
+        this.registrationNumber = registrationNumber;
+    }
 }

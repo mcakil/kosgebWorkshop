@@ -4,11 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BlackList {
-	
-	private final List<User> users = new ArrayList<>();
+    private final List<Applicant> applicants = new ArrayList<>();
 
-	public List<User> getUsers() {
-		return users;
+    public BlackList() {
+    }
+
+	public List<Applicant> getApplicants() {
+		return applicants;
 	}
+
 
 }

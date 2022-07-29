@@ -1,52 +1,50 @@
 package kosgebWorkshop.entities;
 
 public class Application {
-	
-	private int id;
-	private Applicant applicant;
-	private Credit credit;
-	private ApplicationStatus status;
-	
-	public Application(int id, Applicant applicant, Credit credit, ApplicationStatus status) {
-		super();
-		this.id = id;
-		this.applicant = applicant;
-		this.credit = credit;
-		this.status = status;
-	}
+    private int id;
+    private ApplicationStatus applicationStatus;
+    private Applicant applicant;
+    private Credit credit;
 
-	public int getId() {
-		return id;
-	}
+    public Application() {
+    }
 
-	public void setId(int id) {
-		this.id = id;
-	}
+    public Application(int id, ApplicationStatus applicationStatus, Applicant applicant, Credit credit) {
+        this.id = id;
+        this.applicationStatus = applicationStatus;
+        this.applicant = applicant;
+        this.credit = credit;
+    }
 
-	public Applicant getApplicant() {
-		return applicant;
-	}
+    public int getId() {
+        return id;
+    }
 
-	public void setApplicant(Applicant applicant) {
-		this.applicant = applicant;
-	}
+    public void setId(int id) {
+        this.id = id;
+    }
 
-	public Credit getCredit() {
-		return credit;
-	}
+    public ApplicationStatus getApplicationStatus() {
+        return applicationStatus;
+    }
 
-	public void setCredit(Credit credit) {
-		this.credit = credit;
-	}
+    public void setApplicationStatus(ApplicationStatus applicationStatus) {
+        this.applicationStatus = applicationStatus;
+    }
 
-	public ApplicationStatus getStatus() {
-		return status;
-	}
+    public Applicant getApplicant() {
+        return applicant;
+    }
 
-	public void setStatus(ApplicationStatus status) {
-		this.status = status;
-	}
-	
-	
-	
+    public void setApplicant(Applicant applicant) {
+        this.applicant = applicant;
+    }
+
+    public Credit getCredit() {
+        return credit;
+    }
+
+    public void setCredit(Credit credit) {
+        this.credit = credit;
+    }
 }

@@ -1,21 +1,13 @@
 package kosgebWorkshop.entities;
 
-import java.util.ArrayList;
-import java.util.List;
+public class Applicant extends User{
 
-public class Applicant extends User {
+    public Applicant() {
+    }
 
-	private final List<Application> applications = new ArrayList<Application>();
-	
-	public Applicant(int id, String username, String password) {
-		super(id, username, password);
-		
-	}
+    public Applicant(int id, String userName, String password) {
+        super(id, userName, password);
+    }
 
-	public List<Application> getApplications() {
-		return applications;
-	}
-	
-	
-	
+
 }
